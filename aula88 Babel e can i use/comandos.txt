@@ -1,0 +1,14 @@
+npm init -y
+npm install --save-dev @babel/cli @babel/preset-env @babel/core
+
+No terminal:
+npx babel main.js -o bundle.js --presets=@babel/env
+
+No arquivo para execução automática:
+abrir o arquivo: package.json
+abaixo do valor: "test"
+
+"babel":"babel ./main.js -o ./bundle.js --presets=@babel/env -w"
+
+Pra iniciar a visualisação automática no arquivo:
+npm run babel
