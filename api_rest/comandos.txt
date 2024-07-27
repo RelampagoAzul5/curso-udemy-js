@@ -1,0 +1,9 @@
+npx sequelize migration:create --name=alunos // cria a migração e da nome a ela
+
+npx sequelize db:migrate // cria a tabela dentro do banco de dados
+
+npx sequelize db:migrate:undo // desfaz a tabela dentro do banco de dados
+
+npx sequelize seed:generate --name cria-usuarios // Cria uma seed para o projeto
+
+npx sequelise db:seed:all // Joga os dados da seed para o banco de dados

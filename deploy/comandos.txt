@@ -1,0 +1,14 @@
+git bash:
+ssh-keygen // cria a chave ssh
+// Para acessar a chave ssh deve ser utilizado os comandos
+eval $(ssh-agent)
+ssh-add ~'caminho_da_chave'
+
+ssh 'ip_do_servidor' // conecta o computador ao servidor
+
+ping 'ip_do_servidor' // ve se o servidor está respondendo
+
+
+ssh 'ip_do_servidor' "git -C 'caminho_do_projeto' pull agenda master" // Executa o comando de pull dentro do servidor mesmo estando fora dele
+
+ex.: ssh 34.95.132.150 "git -C /home/giova/agenda pull master"
